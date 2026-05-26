@@ -32,10 +32,21 @@ mais adequada para producao repetida de bobinas. As prioridades iniciais sao:
 ## Estrutura do projeto
 
 - `Source/OpenCoilWinder/OpenCoilWinder.ino`: firmware Arduino.
+- `Source/OpenCoilWinder/WinderCore.*`: logica testavel do firmware.
 - `Source/Windows/CoilWinder.xlsm`: software de controle original para Windows.
 - `Source/Communication_Commands.xlsx`: comandos de comunicacao.
 - `Images/`: fotos e diagramas do projeto.
 - `Modeling_FreeCAD/`: modelos mecanicos em FreeCAD.
+- `tests/`: testes unitarios da logica que nao depende do hardware.
+
+## Testes
+
+Os testes atuais validam parsing de comandos numericos e calculos de movimento
+do firmware sem exigir Arduino conectado.
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\tests\run_tests.ps1
+```
 
 ## Fluxo de trabalho
 
