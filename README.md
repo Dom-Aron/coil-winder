@@ -1,49 +1,74 @@
-# Coil Winder (Enrolador de Bonina)
+# Coil Winder
 
-> Fork/clonagem do repositório original OpenActuator/CoilWinder.
+Fork de trabalho baseado no projeto publico
+[OpenActuator/CoilWinder](https://github.com/OpenActuator/CoilWinder).
 
-Propósito
+Este repositorio existe para adaptar o projeto original de enrolador de
+bobinas ao nosso uso local: produzir muitas bobinas de forma mais repetivel,
+documentada e facil de manter.
 
-Este repositório contém o código e recursos para um enrolador de bonina (coil winder). A intenção é desenvolver melhorias e adaptar o projeto para usos locais. O desenvolvimento ativo será feito na branch `dev`.
+## Origem
 
-Remotos
+- Repositorio original: https://github.com/OpenActuator/CoilWinder
+- Fork de trabalho: https://github.com/Dom-Aron/coil-winder
+- Licenca original: MIT, preservada neste repositorio em `LICENSE`
+- Branch de desenvolvimento: `dev`
 
-- `upstream`: https://github.com/OpenActuator/CoilWinder.git (origem)
-- `origin`: https://github.com/Dom-Aron/coil-winder.git (seu fork/clone)
+O projeto original foi mantido como referencia. As mudancas deste fork devem
+ficar documentadas aqui para facilitar o uso em laboratorio/oficina e permitir
+sincronizacao futura com o upstream quando fizer sentido.
 
-Como começar
+## Objetivo deste fork
 
-1. Clonar o repositório:
+Estamos usando este repositorio para transformar o projeto original em uma base
+mais adequada para producao repetida de bobinas. As prioridades iniciais sao:
+
+- entender e documentar o firmware Arduino e o software de controle;
+- preservar a referencia ao projeto original e sua licenca;
+- organizar um fluxo de desenvolvimento no GitHub;
+- adaptar parametros, comandos e interface para uso pratico em lote;
+- melhorar confiabilidade, calibracao e retomada do processo quando necessario.
+
+## Estrutura do projeto
+
+- `Source/OpenCoilWinder/OpenCoilWinder.ino`: firmware Arduino.
+- `Source/Windows/CoilWinder.xlsm`: software de controle original para Windows.
+- `Source/Communication_Commands.xlsx`: comandos de comunicacao.
+- `Images/`: fotos e diagramas do projeto.
+- `Modeling_FreeCAD/`: modelos mecanicos em FreeCAD.
+
+## Fluxo de trabalho
+
+O desenvolvimento ativo acontece na branch `dev`.
+
+Para clonar este fork:
 
 ```bash
 git clone https://github.com/Dom-Aron/coil-winder.git
-git remote add upstream https://github.com/OpenActuator/CoilWinder.git
+cd coil-winder
 ```
 
-2. Trocar para a branch de desenvolvimento:
+Para manter a referencia ao repositorio original:
 
 ```bash
-git checkout dev
+git remote add upstream https://github.com/OpenActuator/CoilWinder.git
+git fetch upstream
 ```
 
-3. Sincronizar com o upstream regularmente:
+Para sincronizar futuramente com o projeto original:
 
 ```bash
 git fetch upstream
 git merge upstream/master
 ```
 
-Estrutura
+## Referencia original
 
-O projeto original foi preservado. Faça suas alterações na branch `dev` e abra pull requests para `master` quando estiver pronto.
+O texto abaixo foi preservado do README original para manter o contexto do
+projeto base.
 
-Contribuição
+---
 
-Use a branch `dev` para desenvolvimento. Mantemos um fluxo simples: desenvolver em `dev`, testar e depois mesclar em `master`.
-
-Licença
-
-Ver a licença no repositório original ou adicionar uma nova conforme desejado.
 # Coil Winder (Version 1.2)
 
 This is a Small Coil Winder Project.
@@ -67,8 +92,8 @@ This is a Small Coil Winder Project.
 4. Problems
  - Rotating Motor is not enough power to rotate a coil.
  - Guide Stage can't use because of centering and frictional force about a guide rotator.
- - To need making a control software only for this winder. 
- 
+ - To need making a control software only for this winder.
+
 5. Youtube Video : https://youtu.be/hM2LF0jpD0Y
 <br><br>
 6. Detail Information
