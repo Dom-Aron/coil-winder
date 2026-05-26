@@ -1,3 +1,49 @@
+# Coil Winder (Enrolador de Bonina)
+
+> Fork/clonagem do repositório original OpenActuator/CoilWinder.
+
+Propósito
+
+Este repositório contém o código e recursos para um enrolador de bonina (coil winder). A intenção é desenvolver melhorias e adaptar o projeto para usos locais. O desenvolvimento ativo será feito na branch `dev`.
+
+Remotos
+
+- `upstream`: https://github.com/OpenActuator/CoilWinder.git (origem)
+- `origin`: https://github.com/Dom-Aron/coil-winder.git (seu fork/clone)
+
+Como começar
+
+1. Clonar o repositório:
+
+```bash
+git clone https://github.com/Dom-Aron/coil-winder.git
+git remote add upstream https://github.com/OpenActuator/CoilWinder.git
+```
+
+2. Trocar para a branch de desenvolvimento:
+
+```bash
+git checkout dev
+```
+
+3. Sincronizar com o upstream regularmente:
+
+```bash
+git fetch upstream
+git merge upstream/master
+```
+
+Estrutura
+
+O projeto original foi preservado. Faça suas alterações na branch `dev` e abra pull requests para `master` quando estiver pronto.
+
+Contribuição
+
+Use a branch `dev` para desenvolvimento. Mantemos um fluxo simples: desenvolver em `dev`, testar e depois mesclar em `master`.
+
+Licença
+
+Ver a licença no repositório original ou adicionar uma nova conforme desejado.
 # Coil Winder (Version 1.2)
 
 This is a Small Coil Winder Project.

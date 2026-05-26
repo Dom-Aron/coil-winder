@@ -1,0 +1,33 @@
+# Common ignores
+.vscode/
+.idea/
+*.log
+*.tmp
+*.tmp*
+.DS_Store
+
+# Build / binaries
+*/build/
+/build/
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.exe
+
+# Python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# PlatformIO / Arduino artifacts
+.pio/
+*.elf
+*.bin
+*.hex
+
+# Misc
+Thumbs.db
